@@ -156,6 +156,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+	/*modificacion del ancho se ve desbordado movil*/
+width:80%;
 }
 
 .main .buscadorPrincipal .tituloSection {
