@@ -78,6 +78,8 @@ body {
 
 /* ESTILOS PARA HEADER MOBILE Y TABLET */
 @media (max-width: 768px) {
+.main .buscadorPrincipal{width:100%;}
+	
     .header {
         height: initial;
     }
