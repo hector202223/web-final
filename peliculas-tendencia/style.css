@@ -1,0 +1,105 @@
+/* SECCION PELICULAS TENDENCIA */
+.peliculasTendencia {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+	color:white;
+}
+
+.peliculasTendencia .tituloSection {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.peliculasTendencia .peliculas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.peliculasTendencia .peliculas a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.peliculasTendencia .peliculas a .pelicula {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.peliculasTendencia .peliculas a .pelicula .imgTendencia {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.peliculasTendencia .peliculas a .pelicula .tituloPelicula {
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    max-width: 20rem;
+    width: 100%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.peliculasTendencia .peliculas a .pelicula .tituloPelicula h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.peliculasTendencia .peliculas a .pelicula:hover {
+    box-shadow: 0 0 30px #9f3648cd;
+    transform: scale(1.1);
+}
+
+.peliculasTendencia .peliculas a .pelicula:hover h4 {
+    opacity: 1;
+}
+
+.peliculasTendencia .peliculas a .pelicula:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #9f3648;
+    z-index: 1;
+}
+
+.peliculasTendencia .boton {
+    border: 1px solid white;
+    box-sizing: content-box;
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: #9f3647;
+    color: #ffffff;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 60px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.peliculasTendencia .boton:hover {
+    background-color: #9f3647;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
